@@ -9,9 +9,14 @@ import {
   FaGithub,
   FaLinux,
   FaAws,
-  FaDownload
+  FaDownload,
 } from "react-icons/fa";
-import { SiPowerbi, SiAdobephotoshop } from "react-icons/si";
+import {
+  SiPowerbi,
+  SiAdobephotoshop,
+  SiRedux,
+  SiTypescript,
+} from "react-icons/si";
 
 const certifications = [
   {
@@ -93,14 +98,14 @@ export default function Resume() {
       <div className="myresume">
         <div className="resume-hero">
           <h3 className="hero-name">Mageshkannan Annathurai</h3>
-          <h4 className="hero-title">
-            Fron-End Developer
-          </h4>
+          <h4 className="hero-title">Fron-End Developer</h4>
           <p className="hero-desc">
-            As a developer with expertise in responsive web applications, I
-            bring a wealth of experience to any project. I am passionate about
-            overcoming challenges and am excited to take on new opportunities
-            that will enable me to continue to develop my skills.
+            Web engineer with two years' expertise using React to create
+            flexible web apps. Highly driven. knowledgeable about
+            React-Bootstrap and MUI for design, as well as HTML, CSS, Bootstrap,
+            and JavaScript. React components, props, and state and routing are
+            all very well understood. Extra knowledge of Typescript and Redux
+            Toolkit
           </p>
         </div>
       </div>
@@ -108,7 +113,7 @@ export default function Resume() {
         <h3>Skills:</h3>
         <div className="skills">
           <div title="HTML">
-            <FaHtml5 title="HTML"   />
+            <FaHtml5 title="HTML" />
           </div>
           <div title="CSS">
             <FaCss3Alt title="CSS" />
@@ -119,8 +124,14 @@ export default function Resume() {
           <div title="JavaScript">
             <FaJsSquare title="JavaScript" />
           </div>
+          <div title="Typescript">
+            <SiTypescript title="Typrscript" />
+          </div>
           <div title="React">
             <FaReact title="React" />
+          </div>
+          <div title="Redux">
+            <SiRedux title="Redux" />
           </div>
           <div title="Github">
             <FaGithub title="Github" />
@@ -132,7 +143,7 @@ export default function Resume() {
             <FaAws title="AWS" />
           </div>
           <div title="PowerBI">
-            <SiPowerbi  title="PowerBI" />
+            <SiPowerbi title="PowerBI" />
           </div>
           <div title="Photoshop">
             <SiAdobephotoshop title="Photoshop" />
@@ -149,7 +160,7 @@ export default function Resume() {
         <div className="cg-project">
           <h4 className="project-title">
             Millenial Garage Project Tracker,
-            <span className="exp-duration"> July 2021 - Dec 2021</span>
+            <span className="exp-duration"> July 2021 - Oct 2021</span>
           </h4>
           <ul>
             <li>
@@ -163,11 +174,43 @@ export default function Resume() {
             </li>
           </ul>
         </div>
+        <div className="cg-project">
+          <h4 className="project-title">
+            Internal Project Management,
+            <span className="exp-duration"> Oct 2021 - Dec 2021</span>
+          </h4>
+          <ul>
+            <li>
+              Developed a React component "Add to Project" for quick creation of
+              new projects using a user- friendly form with react-hook-forms{" "}
+            </li>
+            <li>
+              Created "Project Listing" component for displaying existing
+              projects in an organized and user- friendly manner
+            </li>
+            <li>
+              Implemented filter and sorting features in the project listing
+              page for easy organization of projects based on specific criteria,
+              with React routing for seamless navigation between pages
+            </li>
+            <li>
+              Utilized React-Bootstrap for styling the components, ensuring
+              consistency and responsiveness across different devices and
+              browsers
+            </li>
+            <li>
+              Added React routing for seamless navigation between the "Add to
+              Project" and "Project Listing" pages
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="education">
-      <h3>Education</h3>
+        <h3>Education</h3>
         <h4>Bachelor of Engineering - Computer Science and Engineering</h4>
-        <h5>Adhiyamaan College of Engineering, Hosur - October 2016 to April 2020</h5>
+        <h5>
+          Adhiyamaan College of Engineering, Hosur - October 2016 to April 2020
+        </h5>
       </div>
       <div className="certifications-wrapper">
         <h3>Certifications</h3>
@@ -187,7 +230,9 @@ export default function Resume() {
           ))}
         </div>
       </div>
-      <a className="resumebtn" href="/Mageshkannan Resume.pdf" target='_blank'><FaDownload/> Resume</a>
+      <a className="resumebtn" href="/Mageshkannan Resume.pdf" target="_blank">
+        <FaDownload /> Resume
+      </a>
     </div>
   );
 }
