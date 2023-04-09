@@ -3,11 +3,40 @@ import "../styles/portfolio.css";
 
 const projects = [
   {
+    title: 'E-Commerce App',
+    description: 'E-commerce developed with React, Redux toolkit with API',
+    image: '/portfolio/e-commerce-v2.png',
+    live: 'https://shoppingcart-rtk-ts.netlify.app/',
+    source:'https://github.com/Magesh-sam/shopping-cart'
+
+  },
+  {
+    title: 'Contact App(PWA)',
+    description: 'PWA Contact App developed using React and Redux Toolkit',
+    image: '/portfolio/contactapp.png',
+    live: 'https://contact-app-redux-tk.netlify.app/',
+    source:'https://github.com/Magesh-sam/contacts'
+  },
+  {
     title: "Portfolio",
     description: "My portfolio developed using React showcasing my works ",
     image: "/portfolio/portfolio.png",
     live: "https://mageshkannan.netlify.app/",
-    source: "",
+    source: "https://github.com/Magesh-sam/react-portfolio",
+  },
+  {
+    title: 'Planet App',
+    description: 'Planet App developed with planet API using React',
+    image: '/portfolio/planetapp.png',
+    live: 'https://planet-app-react.netlify.app/',
+    source:'https://github.com/Magesh-sam/Planet-App'
+  },
+  {
+    title: 'Blog App V2',
+    description: 'Blog App developed using React, TypeScript and MUI',
+    image: '/portfolio/blogappv2.png',
+    live: 'https://blogapp-ts-mui.netlify.app/',
+    source:'https://github.com/Magesh-sam/blogapp-mui-ts'
   },
   {
     title: "Blog App",
